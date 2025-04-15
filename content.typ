@@ -8,13 +8,9 @@
 #let todo(content, color: rgb("#a6d189")) = {
   return block(inset: 6pt, fill: color, width: 100%, radius: 4pt)[#content]
 }
-#set page(columns: 2)
+#set page(columns: 1)
 
-#set par(
-  leading: 1em,
-  first-line-indent: (amount: 2em, all: true),
-  justify: true,
-)
+
 //bbb
 #outline()
 
@@ -27,6 +23,15 @@
 
 #pagebreak()
 
+#align(center)[
+  #text(size: 20pt, weight: "bold")[GMamba: A Hybrid Model Based on Generative Adversarial Networks and Mamba for High-quality Image Dehazing]
+]
+
+#set par(
+  leading: 1em,
+  first-line-indent: (amount: 2em, all: true),
+  justify: true,
+)
 #heading(numbering: none, outlined: true)[Abstract]
 
 // #todo()[
